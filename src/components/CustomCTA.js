@@ -28,7 +28,7 @@ const CustomCTA = (props) => {
                   officia deserunt mollit anim id est laborum.
                 </p>
                 <Button className="custom-cta-btn" type="primary">
-                  Faça parte
+                  Saiba Mais
                 </Button>
             </div>
           </div>

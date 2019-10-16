@@ -1,8 +1,6 @@
 import React from 'react'
 import { Icon } from 'antd'
 import Logo from '../img/logo.png'
-import PsLogo from '../img/google-play-badge.png'
-import IosLogo from '../img/epou.svg'
 import '../stylesheets/main.css'
 
 const CustomFooter = (props) => {
@@ -13,13 +11,13 @@ const CustomFooter = (props) => {
       </div>
       <div className="store-container">
       <div className="icons">
-            <a href="https://google.com.br">
+            <a href="http://instagram.com/rh.alves/">
               <Icon type="instagram" />
             </a>
-            <a href="https://google.com.br">
-              <Icon type="facebook" />
+            <a href="https://www.linkedin.com/in/ricardohenri/">
+              <Icon type="linkedin" />
             </a>
-            <a href="https://google.com.br">
+            <a href="http://twitter.com/thesamehunter">
               <Icon type="twitter" />
             </a>
           </div>
