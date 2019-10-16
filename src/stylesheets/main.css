@@ -1,0 +1,143 @@
+*{margin: 0;padding: 0}
+a{color:inherit;text-decoration: none;}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr ;
+  grid-template-areas: ". logo-container logo-container . . . . . . . login-container login-container . btn-container btn-container ." ". . . . . . . . . . . . . . . ." ". . . . . . . . . . . . . . . ." ". . . . . . . . . . . . . . . ." ". . . . . . . . . . . . . . . ." ". . . . . . . . . . . . . . . ." ". . . . . . . . . . . . . . . ." ". . . . . . . . . . . . . . . ." ". . . . . . . . . . . . . . . .";
+  margin: auto;
+}
+.logo-container { grid-area: logo-container; margin-top:10px}
+.logo-container .logo-odracir{width: 4vw;margin: auto;margin-top: -0.2rem;}
+.login-container { grid-area: login-container; margin-top:10px}
+.login-container .icon-user-login{font-size: 1.1rem;color:#fff; border: 2px solid #fff; border-radius: 50%;padding: 0.3rem; margin-right: 0.7rem;}
+.login-container span{color:#fff;margin-right: 2rem;}
+.btn-container { grid-area: btn-container; margin-top:10px}
+.btn-container .custom-cta-btn{background-color: #81cd00; border-color: #81cd00;transition: background-color 0.5s ease-out}
+.btn-container .custom-cta-btn:hover{background-color: #72CC45}
+.ant-layout-header{height: 14vh;background: #001529;}
+
+
+
+/* Icon grid */
+.icon-container{
+  overflow-y: hidden;overflow-x: scroll;-webkit-overflow-scrolling: touch;display: flex;flex-direction: row;align-items: flex-start;
+  width: 75%;margin: auto;margin-top:2rem; padding-bottom: 1rem;text-align: center;}
+.icon-container a{text-align: center;min-width: 91px;padding: .96rem}
+.anticon{font-size: 2.4rem;margin-bottom: 0.5rem}
+.ant-btn-primary{background-color: #001529;border-color: #001529;}
+
+
+.mb-20{margin-bottom: 2rem}
+.mt-2rem{margin-top: 2rem}
+.icons{color: #fff;}
+.icons a{  text-align: center;padding: .46rem}
+.icons .anticon{font-size: 1rem;}
+/* Search Container */
+
+.search-container{width: 75%;margin: auto;padding-bottom: 1.3rem;padding-top: 1.3rem;border-top:1px solid #ccc;border-bottom:1px solid #ccc; margin-bottom: 2rem}
+
+/* Placeholder */
+.img-placeholder{width: 100%; height: auto;}
+
+/* css bootstrap  */
+.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+@media (min-width:768px){.container{width:750px}}
+@media (min-width:992px){.container{width:970px}}
+@media (min-width:1200px){.container{width:1170px}}
+.container-fluid{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+.row{margin-right:-15px;margin-left:-15px}
+.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9
+{position:relative;min-height:1px;padding-right:15px;padding-left:15px;float:left}
+.col-md-6{width:50%}
+.width-75{width: 75%;}
+.center-div{margin: auto;display: block;}
+
+
+/* footer css */
+.ant-layout-footer{background:#001529;margin-top: 2rem}
+.footer-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr ;
+  grid-template-areas: ". logo-foter-container logo-foter-container . . icons-footer-container store-container store-container .";
+}
+
+.logo-foter-container { grid-area: logo-foter-container; }
+
+.icons-footer-container { grid-area: icons-footer-container; color:#fff }
+.icons-footer-container a{font-size: 0.51rem;text-align: center;padding: .6rem}
+.store-container { grid-area: store-container; }
+
+/* Media querys for all elements in home */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo-container. . login-container login-container .";
+  }
+  .logo-container { grid-area: logo-container; margin-right: 1.9rem;}
+  .logo-container .logo-odracir{width: 15vw}
+  .login-container { grid-area: login-container; }
+  .btn-container{display: none}
+  .hidden-xs{display: none !important;}
+  .icon-container{overflow-y: hidden;overflow-x: scroll;-webkit-overflow-scrolling: touch;display: flex;flex-direction: row;align-items: flex-start;}
+  .col-md-6{width:100%}
+  .footer-stores{width:20vw;}
+  .logo-foter-container .logo-odracir{width: 20vw}
+  .icons-footer-container{display: flex;}
+  .icons-footer-container a{padding: .3rem;margin-top: .6rem;}
+  .icons-footer-container .anticon{font-size: 1.8rem}
+  .col-md-6{width: 100%}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .logo-container .logo-odracir{width: 10vw}
+  .footer-stores{width: 13vw;}
+  .col-md-6{width: 100%}
+  .logo-foter-container .logo-odracir{width: 10vw;}
+  .icons-footer-container{margin-top: 1rem; display: flex;}
+  .icons-footer-container .anticon{ font-size: 1.0rem}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo-container. . login-container login-container . btn-container";
+  }
+  .logo-container .logo-odracir{width: 7vw}
+  .footer-logo-container .logo-odracir{width: 2vw}
+  .col-md-6{width: 100%}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas: ". logo-container logo-container . . login-container btn-container btn-container .";
+  }
+  .icons-footer-container{margin-top: 1rem}
+  .logo-foter-container .logo-odracir{width: 6rem}
+  .footer-stores{width: 8vw;}
+  .icon-container{overflow-y: hidden;overflow-x: scroll;-webkit-overflow-scrolling: touch;display: flex;flex-direction: row;align-items: flex-start;}
+  .col-md-6{width: 50%}
+}
+
+@media only screen and (min-width: 1200px) {
+  .icon-container{overflow-y: hidden;overflow-x: hidden;-webkit-overflow-scrolling: touch;display: flex;flex-direction: row;align-items: flex-start;}
+  .col-md-6{width:50%}
+  .icons-footer-container{margin-top: 0}
+  .ant-layout-header{height: 11vh;}
+  .icon-container a{min-width: 121px;}
+}
+.icon-container a:hover{color:#81cd00;}
+.anticon:hover{color:#81cd00;}
+.ant-btn-primary:hover, .ant-btn-primary:focus{background-color: #81cd00;}
