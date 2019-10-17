@@ -9,12 +9,12 @@ const CustomCTA = (props) => {
     <div className="container width-75">
       <div className="row">
         <div className="col-md-12 mt-2rem">
-          <div className="col-md-6">
+          <div className="col-md-3">
             <div className="center-div">
             <img className="img-placeholder" src={Placeholder} alt=""/>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-8">
             <div className="center-div">
               <h2>Nosso objetivo</h2>
                 <p>

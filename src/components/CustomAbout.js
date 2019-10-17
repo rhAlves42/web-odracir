@@ -9,7 +9,7 @@ const CustomAbout = (props) => {
     <div className="container width-75">
       <div className="row">
         <div className="col-md-12">
-          <div className="col-md-6">
+          <div className="col-md-8">
             <div className="center-div">
               <h2>Nossa história</h2>
                 <p>
@@ -23,11 +23,11 @@ const CustomAbout = (props) => {
                   officia deserunt mollit anim id est laborum.
                 </p>
                 <Button className="custom-cta-btn mb-20" type="primary">
-                  Anuncie aqui
+                  Clique Aqui
                 </Button>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-3">
             <div className="center-div">
               <img className="img-placeholder" src={Placeholder} alt=""/>
             </div>

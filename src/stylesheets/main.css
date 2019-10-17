@@ -49,6 +49,8 @@ a{color:inherit;text-decoration: none;}
 .row{margin-right:-15px;margin-left:-15px}
 .col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9
 {position:relative;min-height:1px;padding-right:15px;padding-left:15px;float:left}
+.col-md-8{width: 60%}
+.col-md-3{width: 40%}
 .col-md-6{width:50%}
 .width-75{width: 75%;}
 .center-div{margin: auto;display: block;}
