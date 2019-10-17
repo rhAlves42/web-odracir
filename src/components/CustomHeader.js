@@ -8,14 +8,14 @@ const CustomHeader = (props) => {
     <Header>
       <div className="grid-container">
         <div className="logo-container">
-          <img className="logo-odracir" src={Logo} alt="Orçaki Logo" />
+          <img className="logo-odracir" src={Logo} alt="odracir Logo" />
         </div>
         <div className="login-container">
             <span><a href="https://google.com.br">Entrar</a></span>
             <span><a href="https://google.com.br">Registrar</a></span>
         </div>
         <div className="btn-container">
-          <Button className="custom-cta-btn" type="primary">Anúncie já</Button>
+          <Button className="custom-cta-btn" type="primary">Clique aqui</Button>
         </div>
       </div>
     </Header>
