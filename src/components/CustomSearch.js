@@ -7,7 +7,7 @@ const CustomSearch = (props) =>{
     return (
       <div className="search-container">
         <Search
-          placeholder="Padrão Orcaki"
+          placeholder="Odracir"
           enterButton="Pesquisar"
           size="large"
           onSearch={value => console.log(value)}
